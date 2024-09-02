@@ -7,7 +7,7 @@ print(immutable_var)
 # При выводе ответа выдаётся ошибка
 # Ошибка буквально сообщает, что кортеж не поддерживает обращение по элементам
 # 4. Создать изменяемую структуру данных
-mutable_list =([1, 2,'Andrey','excellent','guy', True], 0, 5, 9)
+mutable_list =[1, 2,'Andrey','excellent','guy', True],0
 print(mutable_list)
 mutable_list [0][4] = 'man'
 print(mutable_list)
