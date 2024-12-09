@@ -1,0 +1,16 @@
+calls = 0
+
+
+def count_calls():
+    global calls
+    calls +=1
+def string_info(string):
+    count_calls()
+    return (len (string), string.upper, string.lower)
+def is_contains(string, list_to_search):
+    count_calls()
+    return string.upper() in [string.upper() for string in list_to_search]
+print(string_info('Futurama'))
+print(string_info('Colliseum'))
+print(is_contains('Burbon',['bon', 'CaRbOn', 'buRBON']))
+print(is_contains('class',['reclassic', 'classical']))
